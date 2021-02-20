@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title> Login and Registration</title>
+	<meta chatset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/loginstyle.css') }}" />
+	<link href="https://fonts.googleapis.com/css?family=Play"
+	rel="stylesheet">
+	
+</head>
+
+
+	<body style="background-image: url({{ url_for('static', filename='images/34.jpg')}});">
+
+		<!--<div class="signin">
+			<form>
+				<h2 style="color: white">Log In</h2>
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="pass" placeholder="Password"><br><br>
+				<a href=""><input type="button" value="Log In"></a><br><br>
+				<div id="container">
+				<a href="a" style="margin-right:0px;font-size:13px;font-family:Montserrat, sans-serif;">Reset password</a> 
+				<a href="a" style="margin-right:0px;font-size:13px;font-family:Montserrat, sans-serif;">Forgot Password</a>
+			</div><br><br><br><br><br><br>
+			Dont have an account?<a href="#">&nbsp;Sign-Up</a>
+           </form>
+	    </div>-->
+	    {% block login %}
+{% with messages = get_flashed_messages() %}
+     {% if messages %}
+         {% for msg in messages %}
+              <div class ="alert alert-warning alert-dismissable" id="msg"role="alert">
+                <button type="button" class="close" data-dismiss="alert" arial-label="Close"><span aria-hidden="true">&times;</span></button> 
+                {{msg}}
+            </div>
+         {% endfor %}    
+     {% endif %}    
+{% endwith %}     
+<!--	<div class="container">
+    <h2 class="font-weight-dark" style="font-size:2.225em;">Login</h2>
+    
+	<p><input type="text" class="form-control" name="nm" placeholder="Username" size="40"  value="{{request.form.username}}"/></p>
+	<p><input type="PassWord"  class="form-control" name="psw" placeholder="Password" size="40" value="{{request.form.password}}" /></p>
+    
+	<p><div class="btn-group-lg"><input class ="btn btn-outline-dark" type="submit" name="submit"value="login" style="float:left; margin-left:376px;"/></div></p>
+    <a href= "/mmail">Forgot Password?</a>
+
+</form> -->
+
+
+
+<div class="signin">
+			<form method="POST">
+				<h2 style="color: white">Log In</h2>
+				<input type="text"  name="nm" placeholder="Username" value="{{request.form.username}}" />
+				<input type="password"  name="psw" placeholder="Password" value="{{request.form.password}}"><br><br>
+				<div class="btn-group-md"><input  class="btn btn-outline-info" type="submit" name="submit"value="login"/></div></p>
+				<div id="container">
+				<p style="margin-top: 25px;"><a href="a" style="margin-right:10px;font-size:16px;font-family:Montserrat, sans-serif;">Reset password</a> 		
+				<a href="a" style="margin-right:0px;font-size:16px;font-family:Montserrat, sans-serif;">Forgot Password</a>
+			</div>
+			<p style="margin-top: 35px">Dont have an account?<a href="http://127.0.0.1:5000/register">&nbsp;Sign-Up</a></p>
+
+           </form>
+       </div>
+	   
+
+
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+   </body>
+</html>

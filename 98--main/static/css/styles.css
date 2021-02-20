@@ -1,0 +1,15 @@
+{    
+    font-family: "Times new roman","sans-serif";
+}
+
+
+body{
+    margin-top:auto;
+    margin-left: 15em;
+    padding: 5em;
+    background-image: url(Abstract-Art-Wallpaper-006.jpg);   
+}
+
+.order-done{
+    text-align: center;
+}

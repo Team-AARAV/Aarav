@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+ /*--- Heading Font --*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+
+    color: rgb(58, 132, 197);
+    font-family: 'Righteous', cursive;
+    text-align: center;
+	background-color: rgb(255, 255, 255);
+    }
+video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+ }
+h1{
+	font-family: 'Shadows Into Light Two', cursive;
+	text-align: center;
+	font-size: 250%;
+	color: #316600ce;
+	text-transform: 3px;
+	letter-spacing: 3px;
+	padding: 3% 0 3% 0;
+}
+h2, h3, h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 190%;
+	text-align: center;
+	color:  #000000;
+	text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+p{
+  font-family: 'Cabin',sans-serif;
+  font-size: 150%;
+	padding: 2%;
+	color: #000000;
+  text-align: justify;
+}
+
+img{
+  text-align: center;
+  max-width: 100;
+  object-fit: cover;
+  
+}
+#callout{
+	float: right;
+	margin: 3% 3% 2% 0;
+	height: auto;
+	overflow: hidden;
+}
+#callout h2{
+	text-align: right;
+	color:  #316600ce;
+}
+#callout h2 a {
+	color:  #316600ce;
+	text-decoration: none;
+}
+#callout p {
+	text-align: center;
+	padding: 0%;
+}
+.one-third {
+	width: 20%;
+	float: left;
+	margin: 2% 0 3% 4%;
+  text-align: center;
+  padding: 4%;
+}
+.one-third i {
+	color: #316600ce;
+	font-size: 585%;
+	margin: 2% 5% 3% 7%;
+}
+.clearfix {
+	clear: both;
+}
+h2.welcome {
+	margin-top: 4%;
+}
+.left-col {
+	width: 60%;
+	float: left;
+	margin:4% 0 4% 4%;
+}
+.sidebar {
+	width: 26%;
+	float: left;
+	margin:4% 4%;
+}
+.sidebar img{
+	opacity: 0.8;
+}
+.one-third img {
+  padding: 2% 0 3% 0;
+  position: relative;
+}
+.page-callout {
+	width: 90%;
+	min-height: 70px;
+	margin: 1% auto;
+	border: 1px solid#44e7df;
+}
+.callout-text {
+	float: left;
+	width: 75%;
+	font-size: 22px;
+	font-weight: bold;
+}
+.button-holder {
+	float: right;
+	width: 19%;
+	padding: 1%;
+	margin-bottom: 4%;
+}
+.btn{
+	float: left;
+	~webkit-border-radius: 8;
+	~moz-border-radius: 8;
+	border-radius: 8;
+	color: #fefbef;
+	font-size: 22px;
+	background: #efa831;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.btn:hover {
+	background: #f07818;
+	text-decoration: none;
+}
+/*---Start Footer---*/
+footer{
+	background: #316600ce;
+	opacity: 0.9;
+	width: 100%;
+	padding: 1% 0;
+	color: #4c5ce9;
+	overflow: auto;
+}
+footer h3 {
+	text-decoration: underline;
+}
+.footercontact {
+	text-align: center;
+}
+.phone a{
+	color:#4c5ce9;
+	text-decoration: none;
+}
+.social {
+	list-style-type: none;
+	margin: 2% 0;
+	padding: 0;
+}
+.social li{
+	display: inline;
+}
+.social i{
+	color: #4018f0;
+	font-size: 195%;
+	padding: 3%;
+}
+.social i:hover {
+	color: #e918f0;
+}
+.google-maps {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/* Add a black background color to the top navigation */
+.navbar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar ul{
+    text-align: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transform: all ease 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: #211b4385;
+}
+.main-text {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+    font-size: 180px;
+    font-weight: bold;
+    background-image: url(static/images/smoke-colors-abstract-qo.jpg);
+    color: transparent;  
+    -webkit-background-clip: text;
+    animation: animate 35s infinite linear;
+}
+
+.secondary-text {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: rgb(140, 240, 26)
+}
+/*-- Media Queries! --*/
+@media screen and (max-width: 767px){
+
+	#callout {
+		width: 100%;
+		margin: 3% 0 2% 0;
+	}
+	#callout p {
+		display: none
+	}
+	.slider .bx-wrapper .bx-controls{
+		display: none;
+	}
+	.one-third {
+		float: left;
+		width: 100%;
+		margin: 2% 5% 3% 7%;
+  }
+  .new-one{
+    float: left;
+		width: 100%;
+		margin: 2% 5% 3% 7%;
+  }
+	.one-third i {
+		font-size: 355%;
+	}
+	h1 {
+		font-size: 125%;
+		letter-spacing: 2px;
+	}
+	h2.welcome {
+		font-size: 120;
+	}
+	.left-col {
+		width: 100;
+		margin: 0 0 3% 0;
+	}
+	.sidebar {
+		width: 100%;
+		margin: 0;
+	}
+	img {
+    width: 100%;
+    
+	}
+	.sidebar img{
+		opacity: 0.9;
+	}
+	.page-callout {
+		width: 90%;
+		min-height: 160px;
+	}
+	.callout-text{
+		width: 95%;
+	}
+	.button-holder {
+		width: 80%;
+		padding: 1%;
+	}
+}
+@keyframes animate {
+
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 100% 100%;
+    }
+}
+

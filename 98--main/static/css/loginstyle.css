@@ -1,0 +1,111 @@
+body
+{
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(34.jpg);
+	opacity: 1;
+	background-size: cover;
+}
+
+.signin
+{
+
+background: rgba(12,5,33,0.6);
+padding: 40px;
+width: 400px;
+margin: auto;
+margin-top: 80px;
+height: 380px;
+margin-left: 80x;
+transform: translateX(-5px);
+
+
+}
+
+form{
+	width: 300px;
+	text-align: center;
+	margin:0 auto;
+}
+
+input
+{
+	width: 240px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px  solid #fff;
+	font-family: 'play', sans-serif;
+	font-size: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: #fff;
+
+}
+
+input[type=button]
+{
+  border: none;
+  width: 190px;
+  background: white;
+  color: #000;
+  font-size: 16px;
+  line-height: 25px;
+
+
+}
+
+input[type=button]:hover
+{
+   color: #fff;
+   background-color: skyblue;
+   transition: color .4s;
+}
+
+h2{
+	color: white;
+}
+a{
+	color:#fff;
+	text-decoration: blink;
+}
+a:hover{
+	color: skyblue;
+}
+
+.container{
+	display:flex;
+	flex-direction: row;
+	width: 100%;
+}
+::placeholder {
+	color:aliceblue;
+	opacity: 0.8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

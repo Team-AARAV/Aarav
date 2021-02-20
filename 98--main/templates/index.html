@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>RASOI</title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />	
+	<script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.js"></script>
+	
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<nav class="nav">
+				<div class="menu-toggle">
+					<i class ="fas fa-bars"></i>
+					<i class ="fas fa-times"></i>
+
+
+		</div>
+		
+		<a href="http://127.0.0.1:5000/" class="logo"><img src="{{url_for('static',filename='images/aarav.png')}}" alt=" "></a>
+		<ul class="nav-list">
+
+
+		<li class="nav-item">
+			<a href="http://127.0.0.1:5000/" class="nav-link active">Home</a>
+		</li>
+
+		<li class="nav-item">
+			<a href="http://127.0.0.1:5000/menu" class="nav-link">Menu</a>
+		</li>
+        
+        <li class="nav-item">
+			<a href="http://127.0.0.1:5000/textovervideo" class="nav-link">YogaWorld</a>
+		</li>
+
+		<li class="nav-item">
+			<a href="#" class="nav-link">CONTACT US</a>
+		</li>
+
+
+		</ul>
+
+	</div>
+
+	</header>
+	<!--Header ends-->
+	<section class="hero" style="background-image: url({{ url_for('static', filename='images/1000.jpg')}});">
+		<div class="container">
+			<h2 class="sub-headline">
+				<span class="first-letter">W</span>elcome
+			</h2>
+			<h1 class="headline">AARAV</h1>
+			<div class="headline-description">
+				<div class="seperator">
+					<div class="line line-left"></div>
+					<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+					<div class="line line-right"></div>
+				</div>
+				<div class="single-animation">
+					<h5>SWAD GHAR KA</h5>
+					<a href="http://127.0.0.1:5000/login" class="btn cta-btn">Login</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--hero ends-->
+
+<section class="discover-our-story">
+<div class="container">
+<div class=" restaurant-info">
+	<div class=" restaurant-description padding-right animate-left">
+		<div class="global-headline">
+			<h2 class="sub-headline">
+				<span class="first-letter">A</span>ARAV
+			</h2>
+			<h1 class="headline headline-dark">Our Story</h1>
+			<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+		</div>
+	 <p>
+           AARAV is a whole new way to order take-out that delivers
+fresh homemade food made by your neighbor, straight to your
+door. Discover local home-based cooks in your community,
+browse their unique menus, and let them handle the cooking
+for!<br>The main intention to launch this program is just to give you
+home made food away from home keeping in mind the health
+benefits of home made food and also providing with top class
+fitness knowledge through our special diet plans and fitness
+packages.
+	 </p>
+     <a href="#" class=" btn body-btn">About us</a>
+	</div>
+	<div class=" restaurant-info-img animate-right">
+		<img src="{{url_for('static',filename='images/8.jpg')}}" alt="">
+</div>
+</div>
+</div>
+</section>
+      	
+      	<!--discover our story endsss-->
+
+<section class="tasteful-recipies between" style="background-image: url({{ url_for('static', filename='images/131.jpg') }});">
+<div class="container">
+<div class="global-headline">
+	<div class="animate-top">
+			<h2 class="sub-headline">
+				<span class="first-letter">T</span>asteful
+			</h2>
+		</div>
+		<div class="animate-bottom">
+			<h1 class="headline">Recipies </h1>
+		</div>
+			
+		</div>
+
+
+</div>
+
+
+</section>
+
+<!--tasteful recipies ends-->
+
+<section class="discover-our-menu">
+	<DIV class="container">
+		<DIV class="restaurant-info">
+			<div class="image-group padding-right animate-left">
+				<img src="{{url_for('static',filename='images/2.jpg')}}" alt="">
+				<img src="{{url_for('static',filename='images/20.jpg')}}" alt="">
+				<img src="{{url_for('static',filename='images/21.jpg')}}" alt="">
+				<img src="{{url_for('static',filename='images/22.jpg')}}" alt="">
+		</div>
+		<DIV class="restaurant-description animate-right">
+			<div class="global-headline">
+			<h2 class="sub-headline">
+				<span class="first-letter">D</span>iscover
+			</h2>
+			<h1 class="headline headline-dark">Menu</h1>
+			<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+		</div>
+		 <p>
+           Homemade food available to you 24/7. Place order
+from anywhere at any place. Wide variety of online
+menu provide options for the user to select from home cooks. Precautions are
+taken considering the current COVID-19 situations.
+	 </p>
+	 <a href="http://127.0.0.1:5000/menu" class=" btn body-btn">View Full Menu</a>
+   </DIV>
+</DIV>
+</DIV>
+
+</section>
+
+<!--discover our mwnu ends-->
+<section class="perfect-blend between" style="background-image: url({{ url_for('static', filename='images/25.jpg') }});">
+<div class="container">
+<div class="global-headline">
+	<div class="animate-top">
+			<h2 class="sub-headline">
+				<span class="first-letter">T</span>he perfect
+			</h2>
+		</div>
+		<div class="animate-bottom">
+			<h1 class="headline ">Blend</h1>
+		</div>
+			
+		</div>
+
+
+</div>
+
+
+</section>
+
+<!--perfect blend ends-->
+
+<section class="culinaly-delight">
+
+	<div class="container">
+<div class=" restaurant-info">
+	<div class=" restaurant-description padding-right animate-left">
+		<div class="global-headline">
+			<h2 class="sub-headline">
+				<span class="first-letter">Y</span>oga
+			</h2>
+			<h1 class="headline headline-dark">World</h1>
+			<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+		</div>
+	 <p>
+           cjdbsfcsrfcisc bircsuj viucvsdkcsndv vwvudvbdsnkj ewceiucvdfbkjvc vsdibvcskjskcbsd cvcikdscskbdcjs vicbcuks  s vicvsdubcsdcs vwbvics  vsdbivcsbdkcslckowe  vcbsdicssklvs  bivscsdkcsbciukd
+	 </p>
+     <a href="http://127.0.0.1:5000/textovervideo" class=" btn body-btn">YOGAWORLD</a>
+	</div>
+	<div class=" image-group">
+		<img class="animate top" src="{{url_for('static',filename='images/9.jpg')}}" alt="">
+		<img class="animate bottom" src="{{url_for('static',filename='images/11.jpg')}}" alt="">
+</div>
+</div>
+</div>
+
+
+
+	
+	</section>
+
+	<!--culinary delight ends-->
+	<footer>
+	<div class="container">
+	<div class="back-to-top">
+      <a href="#hero" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()"><i class=" fas fa-chevron-up"></i></a>
+	</div>
+	<div class="footer-content">
+		<div class="footer-content-about animate-top">
+			<h4>About Rasoi</h4>
+			<div class="asterisk"><i class="fas fa-asterisk"></i></div>
+			<p>
+				cvcikdscskbdcjs vicbcuks  s vicvsdubcsdcs vwbvics  vsdbivcsbdkcslckowe  vcbsdicssklvs  bivscsdkcsbciukd
+	        </p>
+		</div>
+
+
+<div class=" footer-content-divider animate-bottom">
+	<div class="social-media">
+	<h4>Follow Us On</h4>
+	<ul class="social-icons">
+		<li>
+			<a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+		</li>
+
+			<li>
+			<a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+		</li>
+
+
+			<li>
+			<a href="https://in.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+		</li>
+
+			<li>
+			<a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+		</li>
+
+
+			<li>
+			<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+		</li>
+	
+
+	</ul>
+</div>
+ <div class="newsletter-container">
+ 	<h4>Notifications</h4>
+ 	<form action="" class="newsletter-form"style="width:220px">
+ 		<input type="text" class="newsletter-input" placeholder="Your e-mail address..." >
+ 		<button class="newsletter-btn" type="submit">
+ 			<i class="fas fa-envelope"></i>
+ 		</button>
+
+
+
+ 	</form>
+
+ </div>
+
+</div>
+
+
+
+	</div>
+
+
+	</div>
+
+
+
+	</footer>
+
+
+
+
+
+
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+
+</body>
+</html>

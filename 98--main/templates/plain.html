@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    
+ <link rel="canonical" href="download.html">
+
+    <!-- Bootstrap core CSS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="{{url_for('static',filename='js/fullpage.min.js')}}"></script>
+
+
+<script type="text/javascript" src="{{url_for('static',filename='js/nav.min.js')}}"></script>
+    
+
+
+
+
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'css/fullpage.min.css')}}">
+
+<link href="{{url_for('static', filename = 'css/starter.css')}}" rel="stylesheet">
+
+    
+
+
+
+
+</head>
+    <!-- Favicons -->
+    <!-- Navigation -->
+    <body>
+
+
+
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<!--<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">!-->
+     
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="http://127.0.0.1:5000/">Boka!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+
+          <a class="nav-link" href="http://127.0.0.1:5000/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:5000/login">Login </a>
+        </li>
+       
+         <li class="nav-item nav-pills" >
+          <a class="nav-link" href="http://127.0.0.1:5000/fitMe">FITNESS<sup>+</sup></a>
+   
+         
+       </ul>
+    </div>
+  </div>
+</nav> 
+      {% block checkout %}{% endblock %}
+
+      {% block dashboard %}{% endblock %} 
+</div>
+<div class="container" style="transform: translate(0,100px);">
+    
+      
+      {% block register %}{% endblock %}
+      {% block forgot_password %}{% endblock %}
+    </div>
+     
+</header>
+
+
+<!-- Page Content -->
+<!--<section class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">Contact us</h2>
+    <p>*Facebook</p>
+    <p>*twitter</p>
+  </div>
+</section>
+-->
+
+
+ <!-- <main role="main" class="inner cover">
+    <h1 class="cover-heading">Cover your page.</h1>
+    
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+    </p> -->
+  </main>
+ 
+
+  <footer class="mastfoot mt-auto">
+   
+  </footer>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/mine.css') }}">
+    <link rel="shortcut icon" type="image/png" href="yoga_favicon.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+    <video playinline autoplay muted loop id="myVideo">
+        <source src="{{url_for('static',filename='images/final.mp4')}}" type="video/mp4">
+    </video>
+    <div class="navbar">
+		<ul class="nav">
+			<li><a href="http://127.0.0.1:5000/textovervideo">HOME</a></li>
+			<li><a href="http://127.0.0.1:5000/2ndpage">ASANAS</a></li>
+			<li><a href="classes.html">CLASSES</a></li>
+			<li><a href="http://127.0.0.1:5000/">AARAV</a></li>
+		</ul>
+	</div>
+    <div class="main-text" style="background-image: url({{ url_for('static', filename='images/smoke-colors-abstract-qo.jpg')}});">Yogaworld</div>
+    <div class="secondary-text">learn to live a healthy lifestyle</div>
+<!--Start Icon, Title, Text-->
+<section class="one-third">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <td><i class="fa fa-connectdevelop"></i></td>
+    <h1>Be A Visionary</h1>
+    <p style="text-indent: 3%;">Expand your horizon with Aarav Yoga, join us and become a visionary.</p>
+</section>
+<section class="one-third">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <td> <i class="fa fa-skyatlas"></i></td>
+    <h1>Get Focussed</h1>
+    <p style="text-indent: 3%;">Train your body, mind and spirit to focus on bettering yourself time and time again</p>
+</section>
+<section class="one-third">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <td> <i class="fa fa-globe"></i></td>
+    <h1>Be Wordly</h1>
+    <p style="text-indent: 3%;">Learn culture and teachings from Yogi's around the world, be one with the earth.</p>
+</section>
+<!--End Icon, Title, Text-->
+<div class="clearfix"></div>
+<!--Start Heading, Text, Image-->
+<h2 class="welcome">Welcome to AARAV yogaworld - connect with us.</h2>
+<section class="left-col">
+    <p style="text-indent: 3%;">Are you ready to take your mind, body and spiritual being to the next level and advance to horizons you thought may never be possible for yourself?</p>
+    <p style="text-indent: 3%;">We at Aarav YogaWorld have the experience and wisdom to improve upon the skills and enlightenment of yoga enthusiasts no matter how long or little you have been active and practicing. Our goal is to establish a long lasting connection with our clients and class participants who we'd like to navigate through the ups and downs life brings with a spiritual ease.</p>
+    <h1>Advance to the next level</h1>
+</section>
+<section class=sidebar>
+    <img src="{{url_for('static',filename='images/pexels-lucas-pezeta-2035066.jpg')}}" width="350"/>
+</section>
+<!--End Heading, Text, Image-->
+<div class="clearfix"></div>
+<!--Start Title, Image, Text-->
+<section class="one-third">
+    <h3>Stretching</h3>
+    <img src="{{url_for('static',filename='images/Yoga-man-workout-fitness.jpg')}}" width="274"/>
+    <p>Enjoy nature and take in the beautiful surroundings with our yogis, stretching outdoors with our state of the art yoga mats.</p>
+</section>
+<section class="one-third">
+    <h3>Yoga Classes</h3>
+    <img src="{{url_for('static',filename='images/pexels-gustavo-fring-3984353.jpg')}}" width="274" />
+    <p>See our classes page for a full list of our yoga classes, our instructions will work with you to find you the class that most meets your goals.</p>
+</section>
+<section class="one-third">
+    <h3>Private Sessions</h3>
+    <img src="{{url_for('static',filename='images/Handsome-man-on-cobra-pose-on-the-mat-802581672_3869x2579.jpeg')}}" width="274"/>
+    <p>Schedule a private session with one of our experienced yogis who will jon you for a personal yoga experience at the destination of your choice.</p>
+</section>
+<!--End Title, Image, Text-->
+<div class="clearfix"></div>
+<!--Start Page Callout-->
+<div class="page-callout">
+    <p class="callout-text">Looking for a class you don't see here? Check out our classes page!</p>
+    <div class="button-holder">
+        <a class="btn" href="classes.html">Our Classes</a>
+    </div>
+</div>
+<!--End Page Callout-->
+<div class="clearfix"></div>
+<!--Start Footer-->
+<footer>
+    <div class="one-third">
+        <h3>Contact Us</h3>
+    </br>
+    <p class="footercontact">Aarav YogaWorld<br>
+        <strong class="phone">9479222355</strong><br><br>
+        Infront of Mohit Traders,<br>
+        Near Church,Durg, CG, India<br>
+        avish.credits@gmail.com
+    </p>
+    <br>
+    <ul class="social">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    </ul>
+</div>
+<div class="one-third">
+    <h3>Our Location</h3>
+    <br>
+    <div class="google-maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7441.061744203402!2d81.28592290000002!3d21.17106000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1603029070560!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+<div class="one-third">
+    <h3>About AARAV</h3>
+    <br>
+    <p>We at Aarav Yogaworld enjoy a philosphy that satisfies both the most modern and ancient practicing of true Dharmic Yogi's.</p>
+    <p>"Wisdom is knowing we are all one. Love is what it feels like and compassion is what it acts like".
+    <br><br>Ethan Walker III</p>
+</div>
+</footer>
+
+<!--End Footer-->
+<p>&copy; Fantastic-Five-Works</p>
+</div>
+<!--End Wrapper-->
+
+</body>
+
+</html>

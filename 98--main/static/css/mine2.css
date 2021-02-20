@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+ /*--- Heading Font --*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+
+    color: rgb(41, 21, 2);
+    font-family: 'Righteous', cursive;
+    text-align: center;
+	background-color: rgb(255, 255, 255);
+    }
+
+/* Add a black background color to the top navigation */
+.navbar{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.navbar ul{
+    text-align: center;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 25px;
+    transform: all ease 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: #211b4385;
+}
+
+p.clear {clear: both}
+
+
+.forpic{
+    background-color:#ffffff;
+}
+.forpic h1{
+    font-size: 350%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    color:  #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-decoration: underline;
+}
+
+.forpic img{
+    height: 490px;
+    width: 600px;
+    position: relative;
+    border:3px;
+    border-style:solid;
+    border-color: #ffffff00;
+    padding: 1em;
+
+}
+.forpic .subbody{
+    font-family: 'Cabin',sans-serif;
+    font-size: 165%;
+    text-align: justify;
+    border:3px;
+    border-style:solid;
+    border-color: #ffffff00;
+    padding: 0.25em;
+
+}
+
+.forpic .forpic1{
+    height: 530px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.856);
+}
+
+.forpic .forpic2{
+    height: 530px;
+    width: 100%;
+    background-color: rgb(0, 255, 55);
+}
+.forpic .forpic3{
+    height: 530px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.856);
+
+}
+.forpic .forpic4{
+    height: 530px;
+    width: 100%;
+    background-color: rgb(0, 255, 55);
+
+}
+.forpic .forpic5{
+    height: 530px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.856);
+
+}
+.footer p{
+        font-family: 'Cabin',sans-serif;
+        font-size: 150%;
+      padding: 2%;
+      color: #000000;
+        text-align: justify;
+}

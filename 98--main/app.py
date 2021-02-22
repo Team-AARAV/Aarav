@@ -223,24 +223,44 @@ def mmail():
 	return render_template("forgot_password.html")		
 
 @app.route('/send_mail',methods=["GET","POST"])
+
+
+
 def sendd_mail():
 	
 		
 		if request.method=="POST":
 
 			email = request.form["Email"]
+			name = request.form["nm"]
 			c,conn = connection()
 			x = c.execute("SELECT uid FROM Users WHERE email = (%s)",(thwart(email,),))
+			data = c.execute("SELECT * FROM Users WHERE username=(%s)",(thwart(name,),))
+			data = c.fetchone()[2]
+			
 			if x:
 				
-				msg = Message("send mail tutroial!",
+				msg = Message("Login Authentication",
 		  		  sender = "pythonmac9@gmail.com",
 		  		  recipients = [email])
-				msg.body = "Yo!Its me Aryan! Sent this message through the Flask app"
-				mail.send(msg)
-				return('Mail-sent')
+				msg.subject = "Login Authentication"
+				msg.body = "Yo!Its me Aryan! Sent this message through the Flask app, your password is {y}".format(y=data)
+				msg.html = """
 
 				
+
+				<h2>Your password for the requested account is  </h2><b>"""+data+"""</b>
+
+				<h1> DEV-X</h1>
+				<p>copyright 2020 </p>
+				"""
+				
+
+				mail.send(msg)
+				flash("Message Sent, Check you Email")
+				return redirect(url_for("login"))
+
+				  
 			else:
 
 				return redirect(url_for("mmail"))

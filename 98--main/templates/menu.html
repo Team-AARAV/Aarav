@@ -27,21 +27,22 @@
                 <li><a href="http://127.0.0.1:5000/">Home</a></li>
                 <li><a href="http://127.0.0.1:5000/menu">Menu</a></li>
                 <li><a href="http://127.0.0.1:5000/textovervideo">Yogaworld</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="http://127.0.0.1:5000/logout">logout</a></li>
                 
             </ul>
         </nav>
       <h1><i class="fa fa-shopping-cart"></i></h1>
 </div>
 <div class="container" style="transform: translate(-25px,100px);">
-        <h1>Hello!, {{user}}</h1>
+        <h1>Hello! <mark>{{user}}</mark></h1>
     </div>
 <div class="row">
 
+
     <div class="col-2">
-        <h1>nvjurfvnidskcnvs<br>fvdvdvdfb</h1>
-        <p>fnisnvksclkscsoivcdkjvnueiubvnvnsdjlcsncdive</p>
-        <a href="" class="btn">explore now &#8594</a>
+        <h1>Order now!!</h1>
+        <p><b>Mouthwatering Food waiting for you</b></p>
+        <a href="http://127.0.0.1:5000/" class="btn">explore now &#8594</a>
     </div>
     <div class="col-2">
         <img src="{{url_for('static',filename='images/999.jpg')}}">
@@ -75,9 +76,9 @@
 <div class="small-container">
 <h2 class="title"> AARAV RECOMMENDED</h2>
 <div class="row">
-    <div class="col-4">
-     <img src="{{url_for('static',filename='images/106.jpg')}}">
-     <h4>Garlic Fried Rice</h4>
+    <div class="col-4-3">
+     <img src="{{url_for('static',filename='images/106.jpg')}}" >
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Garlic Fried Rice</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -85,14 +86,14 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
    <span></span>
  <button>Add to cart</button> 
 </div>
 
-    <div class="col-4">
-     <img src="{{url_for('static',filename='images/110.png')}}">
-     <h4>Veg Momos Soup</h4>
+    <div class="col-4-3">
+     <img src="{{url_for('static',filename='images/veg_momos_soup.png')}}">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Veg Momos Soup</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -100,15 +101,15 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.129.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.129.00</b></p>
        <span></span>
  <button>Add to cart</button>  
     </div>
     
 
-    <div class="col-4">
+    <div class="col-4-3">
      <img src="{{url_for('static',filename='images/1091.png')}}">
-     <h4>Tomato Soup</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Tomato Soup</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -116,14 +117,14 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
        <span></span>
  <button>Add to cart</button> 
     </div>
    
-    <div class="col-4">
-     <img src="{{url_for('static',filename='images/111.png')}}">
-     <h4>Manchow Soup</h4>
+    <div class="col-4-3">
+     <img src="{{url_for('static',filename='images/manchow_soup.png')}}">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Manchow Soup</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -131,7 +132,7 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.109.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.109.00</b></p>
        <span></span>
  <button>Add to cart</button> 
     </div>
@@ -141,8 +142,8 @@
      <h2 class="title">High ON Protein </h2>
      <div class="row">
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/Paneer Waale Rajma.PNG')}}">
-     <h4>Paneer Rajma Mix</h4>
+     <img src="{{url_for('static',filename='images/Paneer waale Rajma.PNG')}}" >
+     <h4 style="font-size: 40px">Paneer Rajma Mix</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -150,14 +151,14 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.149.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.149.00</b></p>
       <span></span>
  <button>Add to cart</button>  
     </div>
     
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Crispy Threaded Paneer.PNG')}}">
-     <h4>Crispy Threaded Paneer</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Crispy Threaded Paneer</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
@@ -165,31 +166,31 @@
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
     <span></span>
  <button>Add to cart</button>  
     </div>
     
 
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/Paneer Tikka Rumali Roti Roll.PNG')}}">
-     <h4>Paneer Tikka Rumali Roll</h4>
-     <div class="rating">
+     <img src="{{url_for('static',filename='images/rumali.PNG')}}" style="transform: translate(0px,20px);">
+     <h4 style="transform: translate(0px,30px);font-size: 40px">Paneer Tikka Rumali Roll</h4>
+     <div class="rating" style="transform: translate(0px,30px);">
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star"></i>
     <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.79.00</p>
+     <p style="transform: translate(0px,30px);color: black;font-size: 20px;"><b>Rs.79.00</b></p>
        <span></span>
- <button>Add to cart</button>  
+ <button style="transform: translate(-60px,30px);">Add to cart</button>  
     </div>
     
 
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/1131.PNG')}}">
-     <h4>Egg Kofta</h4>
+     <img src="{{url_for('static',filename='images/egg_kofta.PNG')}}">
+     <h4 style="font-size: 40px">Egg Kofta</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -197,7 +198,7 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
       <span></span>
  <button>Add to cart</button>  
     </div> 
@@ -206,7 +207,7 @@
  <div class="row">
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Jaini Pulao.PNG')}}">
-     <h4>Jaini Pulao</h4>
+     <h4 style="transform:translate(20px,0px);font-size: 40px">Jaini Pulao</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -214,13 +215,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.69.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.69.00</b></p>
        <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/102.png')}}">
-     <h4>Paalak Chana Daal</h4>
+     <img src="{{url_for('static',filename='images/palak_chanak_dal.png')}}">
+     <h4 style="transform:translate(20px,0px);font-size: 40px">Paalak Chana Daal</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -228,13 +229,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.89.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.89.00</b></p>
       <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Ratatouille.jpg')}}">
-     <h4>Ratatouille</h4>
+     <h4 style="transform:translate(20px,0px);font-size: 40px">Ratatouille</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -242,13 +243,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.129.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.129.00</b></p>
       <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Tomato Herb Salad.jpg')}}">
-     <h4>Tomato Herb Salad</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Tomato Herb Salad</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -256,7 +257,7 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
        <span></span>
  <button>Add to cart</button> 
     </div> 
@@ -265,8 +266,8 @@
      <h2 class="title"> Blood Pressure? NO Pressure! </h2>
  <div class="row">
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/101.png')}}">
-     <h4>Bharwa Bhindi</h4>
+     <img src="{{url_for('static',filename='images/bharwa_bhindi.png')}}">
+     <h4 style ="transform:translate(0px,0px);font-size: 40px">Bharwa Bhindi</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -274,13 +275,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.79.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.79.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/103.png')}}">
-     <h4>Tinda Masala</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Tinda Masala</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -288,13 +289,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.59.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.59.00</b></p>
        <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/104.png')}}">
-     <h4>Torai Chana Masala</h4>
+     <img src="{{url_for('static',filename='images/torai_chana.png')}}">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Torai Chana Masala</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -302,13 +303,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.79.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.79.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/105.png')}}">
-     <h4>Sev Tamatar</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Sev Tamatar</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -316,7 +317,7 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div> 
@@ -326,8 +327,8 @@
  <h2 class="title"> MEATalicous </h2>
  <div class="row">
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/Chicken seekh rara.PNG')}}">
-     <h4>Chicken Seekh Rara</h4>
+     <img src="{{url_for('static',filename='images/Chicken seekh rara.PNG')}}" style="transform: translate(0px,-27px);">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Chicken Seekh Rara</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -335,13 +336,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.149.00</p>
+     <p><b>Rs.149.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Tandoori Omelette Sandwich.PNG')}}">
-     <h4>Tandoori Omelette Sandwich</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Tandoori Omelette Sandwich</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -349,13 +350,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
        <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Soya Nargisi Kofta.PNG')}}">
-     <h4>Soya Nargisi Kofta</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Soya Nargisi Kofta</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -363,13 +364,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.129.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.129.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/Tawa Chicken.PNG')}}">
-     <h4>Tawa Chicken</h4>
+     <img src="{{url_for('static',filename='images/tawa_chicken.PNG')}}">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Tawa Chicken</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -377,7 +378,7 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.179.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.179.00</b></p>
    <span></span>
  <button>Add to cart</button>  
     </div> 
@@ -389,7 +390,7 @@
 <div class="row">
   <div class="col-4">
      <img src="{{url_for('static',filename='images/Kaju Katli with Jaggery.PNG')}}">
-     <h4>Kaju Katli with Jaggery</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Kaju Katli with Jaggery</h4>
        <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -397,13 +398,13 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
        </div>
-     <p>Rs.99.00(per 250 gm)</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00(per 250 gm)</b></p>
    <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Mango Crepe Cake.PNG')}}">
-     <h4>Mango Crepe Cake</h4>
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Mango Crepe Cake</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -411,27 +412,27 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.149.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.149.00</b></p>
      <span></span>
  <button>Add to cart</button>  
     </div>
     <div class="col-4">
      <img src="{{url_for('static',filename='images/Pineapple Sheera.PNG')}}">
-     <h4>Pineapple Sheera</h4>
-     <div class="rating">
+     <h4 style="transform:translate(0px,0px);font-size: 40px">Pineapple Sheera</h4>
+     <div class="rating" style="transform: translate(40px,-5px);">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
       <i class="fa fa-star"></i>
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.99.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.99.00</b></p>
     <span></span>
  <button>Add to cart</button> 
     </div>
     <div class="col-4">
-     <img src="{{url_for('static',filename='images/107.jpg')}}">
-     <h4>Khujri</h4>
+     <img src="{{url_for('static',filename='images/khujri.jpg')}}">
+     <h4 style="transform:translate(0px,0px);font-size: 40px;">Khujri</h4>
      <div class="rating">
     <i class="fa fa-star"></i>
      <i class="fa fa-star"></i>
@@ -439,7 +440,7 @@
        <i class="fa fa-star"></i>
         <i class="fa fa-star-o"></i>
      </div>
-     <p>Rs.59.00</p>
+     <p style="color: black;font-size: 20px;"><b>Rs.59.00</b></p>
   <span></span>
  <button>Add to cart</button> 
     </div> 
@@ -456,10 +457,12 @@
     
     <div class="footer-content">
         <div class="footer-content-about animate-top">
-            <h4>About AARAV</h4>
+            <h4>About Us</h4>
            
-            <p style="color: white;">
-                Deadline se khelte maut se bhidte aur tumhari m@# bhi chodenge abhi 5 march ko aajana!
+           
+            <p style="color: white;font-size: 20px">
+                <b><markk>AARAV</markk> is a whole new way to order takeout that delivers fresh homemade food made by your neighbor, straight to your door.
+Discover local home-based cooks in your community, browse their unique menus, and let them handle cooking for you!  </b>
      </p>
         </div>
 
@@ -496,7 +499,8 @@
     </ul>
 </div>
  <hr>
- <p  style="transform: translateY(20px); color: white;" class="copyright"><br><br><br><br><br><br><br><br>Copyright 2020 - AARAV All rights reserved.</p>
+ <p style="font-size: 300%;color: yellow;transform: translate(0px,80px);">DEV-X</p>
+ <p  style="transform: translate(-156px,0px); color: white;" class="copyright"><br><br><br><br><br><br><br><br>Copyright 2020 - AARAV All rights reserved.</p>
 
 
  <div class="newsletter-container">

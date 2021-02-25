@@ -10,6 +10,14 @@
 body{
   font-family: 'Quicksand', sans-serif;
 }
+mark{
+  background-color: white;
+}
+markk{
+  background-color: yellow;
+  color: black;
+  font-size: 30px;
+}
 .navbar{
   display: flex;
   align-items: center;
@@ -145,7 +153,8 @@ h1.zero:before{
   width: 60%;
   height: 580px;
   padding: 5%;
-  background: #222;
+ border-radius: 25px;
+background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
   position: absolute;
   top:-1000px;
   left: 20%;
@@ -223,19 +232,29 @@ h1.zero:before{
 .small-container{
   max-width: 1080px;
   margin: auto;
-  padding-left: 25px;
+  padding-left: 50px;
   padding-right: 25px;
 }
 
 .col-4{
-  flex-basis:25%;
+  flex-basis:35%;
   padding: 10px;
-  min-width:200px;
+  min-width:100 px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4-3{
+  flex-basis:40%;
+  padding: 10px;
+  min-width:100 px;
   margin-bottom: 50px;
   transition: transform 0.5s;
 }
 
 .col-4 img{
+  width: 100%;
+}
+.col-4-3 img{
   width: 100%;
 }
 .title{
@@ -265,14 +284,21 @@ h4{
 .col-4 p{
   font-size: 14px; 
 }
+.col-4-3 p{
+  font-size: 14px; 
+}
 
 .rating .fa{
   color: #5ad900;
 }
 
 .col-4:hover{
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
+.col-4-3:hover{
+  transform: translateY(-10px);
+}
+
 
 
 
